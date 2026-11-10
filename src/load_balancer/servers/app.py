@@ -30,10 +30,7 @@ def start_server(port):
     http_server = HTTPServer(("0.0.0.0", port), ShopNowRequestHandler)
     http_server.server_name = f"Server on port {port}"
 
-    print(f"The ShopNow server is running on port {port} :)")
+    print(f"The ShopNow server is running on port {port}")
 
     http_server.serve_forever()
     
-    
-if __name__ == "__main__":
-    start_server(8080)
